@@ -1,0 +1,24 @@
+{
+  "options": {
+    "paths": {
+      "root": "/data",
+      "fonts": "fonts",
+      "styles": "styles",
+      "mbtiles": ""
+    },
+    "frontPage": false,
+    "pbfAlias": "pbf"
+  },
+  "styles": {
+    "gray-matter": {
+      "style": "gray-matter.json",
+      "serve_rendered": false,
+      "serve_data": true
+    }
+  },
+  "data": {
+    "sh": {
+      "mbtiles": "sh.mbtiles"
+    }
+  }
+}
