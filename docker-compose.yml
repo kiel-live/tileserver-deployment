@@ -2,21 +2,21 @@ version: '3'
 
 services:
   tileserver-gl:
-    image: maptiler/tileserver-gl:v3.1.0
+    image: maptiler/tileserver-gl:v3.1.1
     restart: always
     networks:
       - web-proxy
     volumes:
       - ./data:/data
     labels:
-      - "traefik.enable=true"
-      - "traefik.docker.network=web-proxy"
-      - "traefik.http.routers.tileserver.entryPoints=websecure"
-      - "traefik.http.routers.tileserver.rule=Host(`$URL`)"
-      - "traefik.http.services.tileserver.loadbalancer.server.port=8080"
+      - 'traefik.enable=true'
+      - 'traefik.docker.network=web-proxy'
+      - 'traefik.http.routers.tileserver.entryPoints=websecure'
+      - 'traefik.http.routers.tileserver.rule=Host(`$URL`)'
+      - 'traefik.http.services.tileserver.loadbalancer.server.port=8080'
     command: -c /data/config.json
 
-networks: 
+networks:
   web-proxy:
-    external: 
+    external:
       name: web-proxy
