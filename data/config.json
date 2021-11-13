@@ -14,6 +14,11 @@
       "style": "gray-matter.json",
       "serve_rendered": false,
       "serve_data": true
+    },
+    "bright-matter": {
+      "style": "bright-matter.json",
+      "serve_rendered": false,
+      "serve_data": true
     }
   },
   "data": {
