@@ -2,7 +2,7 @@ version: '3'
 
 services:
   tileserver-gl:
-    image: maptiler/tileserver-gl:v3.1.1
+    image: maptiler/tileserver-gl:v4.1.1
     restart: always
     networks:
       - web-proxy
@@ -13,7 +13,6 @@ services:
       - 'traefik.docker.network=web-proxy'
       - 'traefik.http.routers.tileserver.entryPoints=websecure'
       - 'traefik.http.routers.tileserver.rule=Host(`$URL`)'
-      - 'traefik.http.services.tileserver.loadbalancer.server.port=8080'
     command: -c /data/config.json
 
 networks:
