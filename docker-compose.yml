@@ -2,7 +2,7 @@ version: '3'
 
 services:
   tileserver-gl:
-    image: maptiler/tileserver-gl:v4.1.1
+    image: maptiler/tileserver-gl:v4.4.0
     restart: always
     networks:
       - web-proxy
