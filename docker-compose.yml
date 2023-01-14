@@ -5,17 +5,11 @@ services:
     image: maptiler/tileserver-gl:v4.4.0
     restart: always
     networks:
-      - web-proxy
+      - web
     volumes:
       - ./data:/data
-    labels:
-      - 'traefik.enable=true'
-      - 'traefik.docker.network=web-proxy'
-      - 'traefik.http.routers.tileserver.entryPoints=websecure'
-      - 'traefik.http.routers.tileserver.rule=Host(`$URL`)'
     command: -c /data/config.json
 
 networks:
-  web-proxy:
-    external:
-      name: web-proxy
+  web:
+    external: true
