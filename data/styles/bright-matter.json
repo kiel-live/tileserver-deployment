@@ -23,7 +23,8 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles://{sh}"
+      "url": "mbtiles://{sh}",
+      "attribution": "<a href=\"http://www.openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"http://www.openstreetmap.org/about/\" target=\"_blank\">&copy; OpenStreetMap contributors</a>"
     }
   },
   "glyphs": "{fontstack}/{range}.pbf",
