@@ -141,10 +141,7 @@
         "text-rotation-alignment": "map",
         "text-size": 12
       },
-      "paint": {
-        "text-color": "hsla(0, 0%, 0%, 0.7)",
-        "text-halo-color": "hsl(0, 0%, 27%)"
-      }
+      "paint": {"text-color": "#777777", "text-halo-color": "hsl(0, 0%, 27%)"}
     },
     {
       "id": "building",
