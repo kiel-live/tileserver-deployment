@@ -1,8 +1,6 @@
-version: '3'
-
 services:
   tileserver-gl:
-    image: maptiler/tileserver-gl:v4.12.0
+    image: maptiler/tileserver-gl:v5.1.3
     restart: always
     networks:
       - web
